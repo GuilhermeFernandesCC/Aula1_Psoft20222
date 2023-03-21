@@ -1,5 +1,3 @@
-import java.util.Collection;
-
 public class ProdutoServices {
     private RepositorioProduto repositorioProduto = new RepositorioProduto();
     private RepositorioLote repositorioLote = new RepositorioLote();
@@ -10,7 +8,7 @@ public class ProdutoServices {
         return novoProduto.getId();
     }
 
-    public Collection<Produto> listarProdutos(){
-        return repositorioProduto.getAllProdutos();
+    public String[] listarProdutos(){
+        return repositorioProduto.getAllProdutoID();
     }
 }

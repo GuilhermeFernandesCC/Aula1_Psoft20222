@@ -1,6 +1,4 @@
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class RepositorioProduto {
     private Map<String,Produto> produtos;
@@ -16,5 +14,8 @@ public class RepositorioProduto {
 
     public Collection<Produto> getAllProdutos(){
         return produtos.values();
+    }
+    public String[] getAllProdutoID(){
+        return produtos.keySet().toArray(new String[0]);
     }
 }
